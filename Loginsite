@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+string login, haslo;
+
+int main()
+{
+    cout << "Witamy w naszym portalu" << endl;
+    cout << "Prosze wpisac login: ";
+    cin >> login;
+    cout << "Proszê wpisaæ haslo: ";
+    cin >> haslo;
+
+    if ((login=="admin")&&(haslo=="szarlotka"))
+    {
+       cout << "Super, zalogowales sie poprawnie" << endl;
+    }
+    else
+    {
+       cout << "Nie udalo sie zalogowac" << endl;
+    }
+
+    return 0;
+}
