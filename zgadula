@@ -1,0 +1,36 @@
+#include <iostream>
+#include <cstdlib>
+#include <time.h>
+
+using namespace std;
+
+int liczba, strzal, ileprob=1;
+
+int main()
+{
+    cout << "Witaj. Pomyslalem sobie liczbe z zakresu od 1 do 100" << endl;
+    srand(time(NULL));
+    liczba=rand()%100+1;
+    cout << liczba << endl;
+
+    while(strzal!=liczba)
+        {
+            ileprob++;
+
+            cout << "zgadnij jaka"<<endl;
+            cin >> strzal;
+
+            if(strzal==liczba)
+                cout << "udalo sie, wygrywasz tepaku. Wygrywasz w "<<ileprob<<" probie"<< endl;
+            if(strzal<liczba)
+                cout << "prawie, ale podana liczba jest zbyt niska" << endl;
+            else if(strzal>liczba)
+                cout << "prawie, ale podana liczba jest zbyt wysoka" << endl;
+
+        }
+
+
+    system ("pause");
+
+    return 0;
+}
