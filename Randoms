@@ -2,6 +2,8 @@
 #include <ctime>
 #include <cstdlib>
 
+//Wykorzystując zaprezentowane powyżej funkcje zadeklaruj tablicę 10 elementową i wypełnij ją losowymi wartościami z zakresu od 10 do 99. Następnie wypisz jej elementy. Instrukcję wypisania można zapisać w pętli wypełniającej tablicę.
+
 using namespace std;
 
 int main()
