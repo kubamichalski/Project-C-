@@ -1,16 +1,19 @@
 #include <iostream>
 #include <cstdlib>
+#include <ctime>
 
 using namespace std;
 
 int main()
 {
-  int tab[6];
+  srand(time(NULL));
+  int tab[6] = {};
 
   for (int i = 0; i < 6; i++)
-    tab[i] = (rand() % 100) + 1; // przypisanie liczby z zakresu 1 - 100
-
-  for (int i = 0; i < 6; i++)
+  {
+    tab[i] = (rand() % 100) + 1;
     cout << tab[i] << endl;
+  }
+
   return 0;
 }
